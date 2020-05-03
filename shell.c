@@ -247,7 +247,7 @@ int commandHandler(char *command) {
 void mainInputLoop() {
     char input[129];
     while (true) {
-        printf("CS361 >");
+        printf("user >");
         fgets(input, 129, stdin);
         commandHandler(input);
     }
