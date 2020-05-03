@@ -17,3 +17,10 @@ pid:7185 status:0
 user >
 
 ```
+
+Usage:
+
+```
+make shell
+./shell
+```
