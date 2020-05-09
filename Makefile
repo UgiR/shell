@@ -3,9 +3,9 @@ test: shell.o sighandlers.o syswrappers.o utils.o flags.o
 	gcc -Wall -o run_tests tests/tests.c shell.o sighandlers.o syswrappers.o utils.o -lcheck -lm -lpthread -lrt -lsubunit
 	./run_tests
 
-hw3: shell.o sighandlers.o syswrappers.o utils.o flags.o
-	rm -f hw3
-	gcc -g shell.o sighandlers.o syswrappers.o utils.o flags.o -o hw3
+shell: shell.o sighandlers.o syswrappers.o utils.o flags.o
+	rm -f shell
+	gcc -g shell.o sighandlers.o syswrappers.o utils.o flags.o -o shell
 
 shell.o: shell.c shell.h flags.c
 	gcc -g -c shell.c
